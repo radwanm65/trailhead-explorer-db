@@ -1,0 +1,16 @@
+{
+  "name": "trailhead-explorer-db",
+  "version": "1.0.0",
+  "description": "QHO431 Week 6 teaching example - Trailhead Explorer, now backed by a real SQLite database",
+  "type": "module",
+  "main": "index.mjs",
+  "scripts": {
+    "start": "node index.mjs",
+    "setup-db": "node database/setup.mjs"
+  },
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "sqlite3": "^5.1.7"
+  }
+}

@@ -1,0 +1,22 @@
+<%- include('partials/header') %>
+
+<h1><%= pageTitle %></h1>
+<p>Pick a trail to see full details:</p>
+
+<div class="trail-grid">
+  <% trails.forEach(trail => { %>
+    <article class="trail-card">
+      <h2><%= trail.name %></h2>
+
+      <!-- A conditional controlling which CSS class is applied,
+           not just which text is shown. -->
+      <span class="badge badge-<%= trail.difficulty.toLowerCase() %>"><%= trail.difficulty %></span>
+
+      <p><%= trail.distance_km %> km</p>
+      <p><%= trail.description %></p>
+      <a href="/trail/<%= trail.slug %>">View details</a>
+    </article>
+  <% }) %>
+</div>
+
+<%- include('partials/footer') %>

@@ -1,0 +1,21 @@
+body { font-family: Arial, sans-serif; max-width: 900px; margin: 2rem auto; padding: 0 1rem; color: #222; }
+header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; border-bottom: 2px solid #333; padding-bottom: 0.75rem; flex-wrap: wrap; }
+.logo { font-weight: bold; text-decoration: none; color: #234d33; font-size: 1.2rem; }
+nav a { margin-left: 1rem; text-decoration: none; color: #234d33; }
+
+.trail-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+.trail-card { border: 1px solid #ddd; border-radius: 6px; padding: 1rem; }
+
+.badge { display: inline-block; padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.85rem; font-weight: bold; color: #fff; }
+.badge-easy { background: #4caf50; }
+.badge-moderate { background: #ff9800; }
+.badge-hard { background: #d32f2f; }
+
+.note-box { background: #fff8e1; border: 1px solid #ffca28; padding: 0.75rem; border-radius: 4px; margin-top: 1rem; }
+
+@media (max-width: 800px) {
+  .trail-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 500px) {
+  .trail-grid { grid-template-columns: 1fr; }
+}
